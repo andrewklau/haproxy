@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/openshift3/ose-haproxy-router
+FROM openshift/origin-haproxy-router
 
 ADD haproxy-config.template.patch /var/lib/haproxy/conf
 USER root
